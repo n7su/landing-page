@@ -139,3 +139,31 @@ h2 {
     font-weight: bold;
     font-size: 18px;
 }
+
+.call-to-action {
+    padding: 8vw 0;
+    display: flex;
+    justify-content: center;
+}
+
+.call-to-action-banner {
+    display: flex;
+    background-color: var(--call-to-action-color);
+    padding: 4vw 8vw;
+    border-radius: 1vw;
+    gap: 8vw;
+    align-items: center;
+}
+
+.call-to-action-banner-content-heading {
+    color: var(--main-text-color);
+    font-weight: bold;
+}
+
+.call-to-action-banner-content-paragraph {
+    color: var(--secondary-text-color);
+}
+
+.call-to-action-banner-button {
+    border: 0.2rem solid var(--main-text-color);
+}
