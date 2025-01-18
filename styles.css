@@ -2,15 +2,18 @@
     --dark-color: #1f2937;
     --main-text-color: #f9faf8;
     --secondary-text-color: #e5e7eb;
+    --call-to-action-color: #3882f6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
 }
 
 body {
-    margin: 0;
     font-family: Roboto, sans-serif;
-}
-
-a {
-    text-decoration: none;
 }
 
 header {
@@ -18,7 +21,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1vw 10vw;
+    padding: 1vw 13vw;
 }
 
 .header-logo {
@@ -33,5 +36,50 @@ nav {
 }
 
 nav a {
+    color: var(--secondary-text-color);
+    font-size: 18px;
+}
+
+.hero {
+    background-color: var(--dark-color);
+    padding: 8vw 13vw;
+    display: flex;
+    gap: 2vw;
+}
+
+.hero-content {
+    flex: 1 1 0;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 48px;
+    color: var(--main-text-color);
+    font-weight: 900;
+}
+
+.hero p {
+    font-size: 18px;
+    color: var(--secondary-text-color);
+}
+
+button {
+    background-color: var(--call-to-action-color);
+    color: var(--main-text-color);
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+.image-placeholder {
+    flex: 1 1 0;
+    background-color: hsl(240, 4%, 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: var(--secondary-text-color);
 }
