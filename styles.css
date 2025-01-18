@@ -88,7 +88,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5vw 22vw;
+    padding: 5vw 16vw;
     gap: 2rem;
 }
 
@@ -100,8 +100,12 @@ h2 {
 
 .cards {
     display: flex;
-    gap: 4vw;
-    text-align: center;
+    gap: 6vw;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
 }
 
 .card-image-placeholder {
@@ -109,4 +113,29 @@ h2 {
     width: 9rem;
     height: 9rem;
     border-radius: 1rem;
+}
+
+.card span {
+    text-align: center;
+    width: 9rem;
+}
+
+.quote {
+    background-color: var(--secondary-text-color);
+    padding: 12vw 19vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote p {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 200;
+    color: var(--dark-color);
+}
+
+.quote span {
+    align-self: flex-end;
+    font-weight: bold;
+    font-size: 18px;
 }
